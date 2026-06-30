@@ -1,4 +1,4 @@
-# NEXUS Studios — Gaming Studio Portfolio
+# 🎮 NEXUS Studios — Gaming Studio Portfolio
 
 <div align="center">
 
@@ -10,76 +10,19 @@
 
 **A premium, production-ready 3D interactive gaming studio portfolio website featuring scroll-driven animations, interactive 3D elements, and dynamic transitions.**
 
-[Live Demo](#) · [Report Bug](#) · [Request Feature](#)
-
 </div>
 
 ---
 
 ## ✨ Features
 
-### 🎮 Interactive 3D Experience
-- **Particle Field**: WebGL-powered interactive particle system that reacts to mouse movement
-- **3D Card Tilt**: Perspective-based card hover effects with real-time mouse tracking
-- **Parallax Scrolling**: Multi-layer depth effects on scroll for immersive navigation
-- **Custom Cursor**: Dynamic cursor that morphs on hover over interactive elements
+### 🕹️ Interactive 3D Experience
 
-### 🎨 Design System
-- **Dark Theme**: Premium dark UI with neon accent colors (cyan, purple, pink)
-- **Glassmorphism**: Frosted glass effects with backdrop blur
-- **Gradient Typography**: Dynamic gradient text with glow effects
-- **Grid & Scanline Overlays**: Retro-futuristic visual atmosphere
+### 🎨 Visual Design
 
 ### 🚀 Animations & Transitions
-- **Scroll-Triggered Animations**: Elements animate on scroll using Intersection Observer
-- **Framer Motion**: Smooth spring physics animations throughout
-- **Loading Screen**: Cinematic loading sequence with progress bar
-- **Glitch Effects**: CSS-driven glitch text effects
-- **Marquee**: Infinite scrolling awards ticker
-- **Staggered Reveals**: Sequential fade-in animations for lists/grids
 
 ### 📱 Responsive Design
-- **Mobile-First**: Fully responsive across all screen sizes
-- **Touch Optimized**: Custom cursor hidden on touch devices
-- **Adaptive Layouts**: Grid systems that reflow beautifully
-
-### ⚡ Performance
-- **Optimized Rendering**: Canvas particle system with efficient draw calls
-- **Lazy Animations**: Animations only trigger when elements enter viewport
-- **Tree Shaking**: Only used components are bundled
-- **Single-File Build**: Production build as a single HTML file
-
----
-
-## 🏗️ Architecture
-
-```
-src/
-├── App.tsx                          # Main app with section composition
-├── main.tsx                         # React entry point
-├── index.css                        # Global styles, Tailwind config, animations
-├── components/
-│   ├── LoadingScreen.tsx            # Cinematic loading animation
-│   ├── CustomCursor.tsx             # Interactive cursor component
-│   ├── ParticleField.tsx            # Canvas-based particle system
-│   ├── Navbar.tsx                   # Responsive nav with scroll tracking
-│   ├── HeroSection.tsx              # Hero with parallax + 3D objects
-│   ├── MarqueeSection.tsx           # Scrolling awards marquee
-│   ├── GamesShowcase.tsx            # Game portfolio with 3D cards
-│   ├── AboutSection.tsx             # Timeline + core values
-│   ├── TechShowcase.tsx             # Tech stack + platform cards
-│   ├── ServicesSection.tsx          # Expandable service cards
-│   ├── TeamSection.tsx              # Team grid with hover effects
-│   ├── TestimonialsSection.tsx      # Testimonial carousel
-│   ├── ContactSection.tsx           # Contact form + info
-│   └── Footer.tsx                   # Newsletter + links footer
-├── hooks/
-│   ├── useScrollProgress.ts         # Scroll position tracking
-│   ├── useInView.ts                 # Intersection Observer hook
-│   └── useMousePosition.ts          # Mouse position + normalized coords
-└── utils/
-    └── cn.ts                        # Tailwind class merging utility
-```
 
 ---
 
@@ -87,143 +30,107 @@ src/
 
 | Technology | Version | Purpose |
 |-----------|---------|---------|
-| **React** | 19.x | UI Framework |
-| **TypeScript** | 5.9 | Type Safety |
-| **Vite** | 7.x | Build Tool |
-| **Tailwind CSS** | 4.x | Utility Styling |
-| **Framer Motion** | latest | Animations |
-| **Lucide React** | latest | Icon Library |
+| **React** | 19.2.6 | UI Framework |
+| **TypeScript** | 5.9.3 | Type Safety |
+| **Vite** | 7.3.2 | Build Tool & Dev Server |
+| **Tailwind CSS** | 4.1.17 | Utility-First Styling |
+| **Framer Motion** | 12.x | Animation Library |
+| **Lucide React** | 1.22.x | Icon Library |
+| **clsx** | 2.1.1 | Conditional CSS Classes |
+| **tailwind-merge** | 3.4.0 | Tailwind Class Merging |
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- **Node.js** >= 18.x
-- **npm** >= 9.x (or yarn/pnpm)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/nexus-studios.git
-   cd nexus-studios
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-   The app will be available at `http://localhost:5173`
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-5. **Preview production build**
-   ```bash
-   npm run preview
-   ```
-
----
-
-## 📁 Key Configuration Files
-
-| File | Purpose |
-|------|---------|
-| `vite.config.ts` | Vite config with React, Tailwind, single-file plugins |
-| `tsconfig.json` | TypeScript compiler configuration |
-| `package.json` | Dependencies and scripts |
-| `index.html` | HTML entry point with Google Fonts |
-
----
-
-## 🎨 Customization Guide
-
-### Colors
-Modify the color palette in `src/index.css` under the `@theme` block:
-```css
-@theme {
-  --color-neon-cyan: #00f0ff;
-  --color-neon-purple: #a855f7;
-  --color-neon-pink: #ec4899;
-  --color-neon-blue: #3b82f6;
-  --color-neon-green: #10b981;
-}
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/nexus-studios.git
+cd nexus-studios
 ```
 
-### Fonts
-The site uses three Google Fonts:
-- **Orbitron** — Headings (futuristic geometric)
-- **Rajdhani** — Labels & UI text (technical feel)
-- **Inter** — Body text (readability)
+### 2. Install dependencies
+```bash
+npm install
+```
 
-Update the `<link>` tag in `index.html` and font references in `index.css`.
+### 3. Start the development server
+```bash
+npm run dev
+```
 
-### Content
-- **Games**: Edit the `games` array in `GamesShowcase.tsx`
-- **Team**: Edit the `team` array in `TeamSection.tsx`
-- **Services**: Edit the `services` array in `ServicesSection.tsx`
-- **Testimonials**: Edit the `testimonials` array in `TestimonialsSection.tsx`
+### 4. Build for production
+```bash
+npm run build
+```
 
-### Images
-Replace images in `public/images/`:
-- `hero-bg.jpg` — Hero background
-- `game1-4.jpg` — Game showcase images
-- `about-bg.jpg` — About section background
-
----
-
-## 📋 Browser Support
-
-| Browser | Support |
-|---------|---------|
-| Chrome 90+ | ✅ Full |
-| Firefox 90+ | ✅ Full |
-| Safari 15+ | ✅ Full |
-| Edge 90+ | ✅ Full |
-| Mobile Chrome | ✅ Full |
-| Mobile Safari | ✅ Full |
+### 5. Preview the production build
+```bash
+npm run preview
+```
+Serves the production build locally for testing before deployment.
 
 ---
 
-## 🔧 Performance Optimizations
+## 📜 Available Scripts
 
-1. **Canvas Particle System**: Efficient 2D canvas rendering with object pooling
-2. **Intersection Observer**: Animations only fire when elements are visible
-3. **CSS Transforms**: Hardware-accelerated animations using `transform` and `opacity`
-4. **Passive Event Listeners**: Scroll and mouse events use `{ passive: true }`
-5. **Image Optimization**: Images compressed and sized appropriately
-6. **Code Splitting**: Component-level code organization for tree shaking
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+| Command | Description |
+|---------|-------------|
+| `npm install` | Installs all dependencies (creates `node_modules/`) |
+| `npm run dev` | Starts dev server at `http://localhost:5173` with HMR |
+| `npm run build` | Creates optimized production build in `dist/` |
+| `npm run preview` | Serves the production build locally for testing |
 
 ---
 
-## 🤝 Contributing
+## 📁 Project Structure
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+```
+nexus-studios/
+│
+├── 📄 .gitignore                  # Files/folders excluded from Git tracking
+├── 📄 README.md                   # Project documentation (this file)
+├── 📄 index.html                  # HTML entry point with meta tags & Google Fonts
+├── 📄 package.json                # Dependencies, scripts & project metadata
+├── 📄 package-lock.json           # Locked dependency versions (auto-generated)
+├── 📄 tsconfig.json               # TypeScript compiler configuration
+├── 📄 vite.config.ts              # Vite build config with React & Tailwind plugins
+│              
+├── 📂 public/                     # Static assets (served as-is, not processed)
+│   └── 📂 images/
+│
+├── 📂 src/                        # Source code
+│   ├── 📄 App.tsx                 # Root component — composes all sections
+│   ├── 📄 main.tsx                # React DOM entry point
+│   ├── 📄 index.css               # Global styles, Tailwind config, animations
+│   │
+│   ├── 📂 components/             # React UI components
+│   │
+│   ├── 📂 hooks/                  # Custom React hooks
+│   │
+│   └── 📂 utils/                  # Utility functions
+│
+├── 📂 node_modules/               # ⚠️ Auto-generated by `npm install` (NOT in Git)
+└── 📂 dist/                       # ⚠️ Auto-generated by `npm run build` (NOT in Git)
+```
+
+---
+
+## 🌍 Browser Support
+
+| Browser | Version | Support |
+|---------|---------|---------|
+| Chrome | 90+ | ✅ Full |
+| Firefox | 90+ | ✅ Full |
+| Safari | 15+ | ✅ Full |
+| Edge | 90+ | ✅ Full |
+| Mobile Chrome | Latest | ✅ Full |
+| Mobile Safari | Latest | ✅ Full |
+| Opera | Latest | ✅ Full |
 
 ---
 
 <div align="center">
-
-**Built with ❤️ by NEXUS Studios**
 
 *Crafting worlds. Defining futures.*
 
